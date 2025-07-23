@@ -104,7 +104,7 @@ class GoslingAgent(Bot):
         self.renderer.begin_rendering()
         # Run our strategy code
         self.run_strat()
-        print(f"Throttle: {self.controller.throttle}")
+        # print(f"Throttle: {self.controller.throttle}") # Debug
         # run the routine on the end of the stack
         if len(self.stack) > 0:
             self.stack[-1].run(self)
