@@ -94,6 +94,8 @@ class GoslingAgent(Bot):
     def get_output(self, packet):
         # print("get_output") # WORKS
         # Reset controller
+        if len(packet.balls) < 1:
+            return self.controller
         self.controller.__init__()
         # Get ready, then preprocess
         if not self.ready:
