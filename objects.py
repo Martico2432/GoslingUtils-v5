@@ -63,7 +63,7 @@ class GoslingAgent(Bot):
 
     def debug_stack(self):
         # Draws the stack on the screen
-        white = self.renderer.white()
+        white = self.renderer.white
         for i in range(len(self.stack) - 1, -1, -1):
             text = self.stack[i].__class__.__name__
             # self.renderer.draw_string_2d(10, 50 + (50 * (len(self.stack) - i)), 3, 3, text, white) # OLD FORMAT
