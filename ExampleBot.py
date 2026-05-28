@@ -26,4 +26,4 @@ if __name__ == "__main__":
     # Connect to RLBot and run
     # Having the agent id here allows for easier development,
     # as otherwise the RLBOT_AGENT_ID environment variable must be set.
-    ExampleBot2("rlbot_community/python_example").run(
+    ExampleBot2("rlbot_community/python_example").run()
